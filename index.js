@@ -114,7 +114,7 @@ client.on(Events.MessageCreate, async (message) => {
     // Ignore bot messages and messages from users with specific roles
     if (
       message.author.bot ||
-      message.member.roles.cache.some((role) => role.name === "YourRoleName")
+      message.member.roles.cache.some((role) => process.env.EXEMPT_ROLE_IDS.split(',').includes(role.id))
     ) {
       return;
     }

@@ -1,0 +1,20 @@
+{
+  "name": "modbot",
+  "version": "1.0.0",
+  "description": "modbot",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint ."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^14.16.3",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.13.0",
+    "eslint": "^9.13.0",
+    "globals": "^15.11.0"
+  }
+}
